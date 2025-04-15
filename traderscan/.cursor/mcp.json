@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "github": {
+        "enabled": true,
+        "repository": "48bits/traderscan.io",
+        "branch": "main",
+        "path": "/",
+        "token": "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"
+    },
+    "context": {
+        "includePatterns": ["**/*"],
+        "excludePatterns": ["node_modules/**", ".git/**", ".env", "**/*.log"]
+    }
+} 
