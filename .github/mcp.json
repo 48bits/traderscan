@@ -1,0 +1,31 @@
+{
+    "version": "1.0",
+    "github": {
+        "repository": "48bits/traderscan",
+        "branch": "main",
+        "workflow": {
+            "name": "Cursor MCP Workflow",
+            "on": {
+                "push": {
+                    "branches": ["main"]
+                },
+                "pull_request": {
+                    "branches": ["main"]
+                }
+            }
+        },
+        "authentication": {
+            "type": "token",
+            "tokenEnv": "GITHUB_TOKEN"
+        }
+    },
+    "cursor": {
+        "enabled": true,
+        "autoSync": true,
+        "features": {
+            "codeReview": true,
+            "continuousIntegration": true,
+            "continuousDeployment": true
+        }
+    }
+} 
